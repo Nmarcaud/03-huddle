@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+/* Colors */
+:root {
+    --button-color: #FF52C1;
+    --text-primary-color: #00252E;
+    --text-secondary-color: #808E9A;
+}
+
+/* Fonts */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-primary-color);
+    font-weight: 600;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+
+/* Navigation */
+nav {
+    display: flex;
+}
+
+.cta {
+    font-weight: 700;
+}
+
+
+
+/* Hero */
+.hero {
+    background: url("img/HERO BG.svg") top center / cover;
+    display: flex;
+    flex-direction: row;
+}
+

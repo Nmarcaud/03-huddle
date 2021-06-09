@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+/* Colors */
+:root {
+    --button-color: #FF52C1;
+    --primary-color: #00252E;
+    --secondary-color: #808E9A;
+}
+
+/* Fonts */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-primary-color);
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+ul {
+    padding-left:0;
+    display: flex;
+}
+
+li {
+    list-style: none;       /* Pour enlever les puces de texte */
+}
+
+
+
+
+
+/* Navigation */
+header {
+    max-height: 3rem;
+    position: relative;
+    top:2rem;
+    z-index: 1;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav img {
+
+}
+
+.cta {
+    font-weight: 700;
+    padding: 1rem 4rem;
+    border-radius: 2rem;
+}
+
+.cta-secondary-button {
+    background: white;
+    color: var(--primary-color);
+    box-shadow: 0px 3px 11px #00000018;
+}
+
+
+
+/* Hero */
+.hero {
+    background: url("../img/HERO BG.svg") top center / cover no-repeat;
+    position: relative;
+    top: 0;
+    height: 750px;
+}
+
+.hero div {
+    display: flex;
+    position: relative;
+    top: 5rem;
+}
+
+.hero div div {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+}
+
+.cta-primary-button {
+    display: flex;
+    background: var(--button-color);
+    color: white;
+    box-shadow: 2px 3px 6px #FF52C12A;
+}
+
+
+
+
+/*  Features */
+.features {
+    flex-direction: column;
+    margin: 10rem 0;
+}
+
+.feature {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 16px #0000001A;
+    margin-bottom: 2rem;
+}
+
+.feature:nth-child(odd) img {
+    order: 1;
+}
+
+.feature-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 40%;
+}
+
+.feature h2 {
+    margin-bottom: 1rem;
+}
+
+.feature p {
+    color: var(--secondary-color);
+}
+
+
+
+
+/*  footer */
+footer {
+    margin-top: 15rem;
+    background: var(--primary-color);
+}
+
+.last-chance-cta {
+    background: white;
+    margin:auto;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 4rem 0;
+    box-shadow: 0px 0px 16px #0000001A;
+    position: relative;
+    top: -10rem;
+}
+
+.last-chance-cta p {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.last-chance-cta a {
+    font-size: 1.25rem;
+    box-shadow: 0px 6px 13px #00252E39;
+}
